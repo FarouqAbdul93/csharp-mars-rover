@@ -90,14 +90,9 @@ namespace MarsRover.Tests
         }
 
         [Test]
-        public void ParseInstructions_Ignores_Invalid_Characters()
+        public void ParseInstructions_Throws_Exception_For_Invalid_Characters()
         {
-            List<Instruction> result = parser.ParseInstructions("LMRHAJR");
-            Assert.That(result.Count, Is.EqualTo(4));
-            Assert.That(result[0], Is.EqualTo(Instruction.L));
-            Assert.That(result[1], Is.EqualTo(Instruction.M));
-            Assert.That(result[2], Is.EqualTo(Instruction.R));
-            Assert.That(result[3], Is.EqualTo(Instruction.R));
+            Assert.That(() => parser.ParseInstructions("LMRHADR"), Throws.TypeOf<ArgumentException>());
         }
 
         [Test]
