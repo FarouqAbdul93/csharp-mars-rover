@@ -87,6 +87,8 @@ namespace MarsRover.Console.InputLayer.Parsers
                 {
                     throw new ArgumentException("Invalid instruction - expected L, R or M only");
 
+                }
+                
             }
             return instructions;
         }

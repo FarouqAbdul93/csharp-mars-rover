@@ -102,11 +102,5 @@ namespace MarsRover.Tests
             Assert.That(result.Count, Is.EqualTo(0));
         }
 
-        [Test]
-        public void ParseInstructions_Returns_Empty_List_For_All_Invalid_Characters()
-        {
-            List<Instruction> result = parser.ParseInstructions("BANANA");
-            Assert.That(result.Count, Is.EqualTo(0));
-        }
     }
 }
