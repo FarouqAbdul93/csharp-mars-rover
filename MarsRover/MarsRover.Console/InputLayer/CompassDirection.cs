@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace MarsRover.Console.InputLayer
 {
-    internal class CompassDirection
+    public enum CompassDirection
     {
+        N, // North
+        E, // East
+        S, // South
+        W  // West
     }
 }

@@ -6,7 +6,17 @@ using System.Threading.Tasks;
 
 namespace MarsRover.Console.InputLayer
 {
-    internal class Position
+    public class Position
     {
+        public int X { get; set; }
+        public int Y { get; set; }
+        public CompassDirection Direction { get; set; }
+
+        public Position(int x, int y, CompassDirection direction)
+        {
+            X = x;
+            Y = y;
+            Direction = direction;
+        }
     }
 }

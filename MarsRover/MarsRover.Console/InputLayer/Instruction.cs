@@ -6,7 +6,10 @@ using System.Threading.Tasks;
 
 namespace MarsRover.Console.InputLayer
 {
-    internal class Instruction
+    public enum Instruction
     {
+        L, // Turn Left
+        R, // Turn Right
+        M  // Move Forward
     }
 }

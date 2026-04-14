@@ -6,7 +6,14 @@ using System.Threading.Tasks;
 
 namespace MarsRover.Console.InputLayer
 {
-    internal class PlateauSize
+    public class PlateauSize
     {
+        public int Width { get; set; }
+        public int Height { get; set; }
+        public PlateauSize(int width, int height)
+        {
+            Width = width;
+            Height = height;
+        }
     }
 }
